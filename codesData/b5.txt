@@ -1,0 +1,15 @@
+def find_median(arr):
+    # Sort the array
+    arr.sort()
+    
+    n = len(arr)
+    
+    # If the length of the array is odd, return the middle element
+    if n % 2 != 0:
+        return arr[n // 2]
+    # If the length of the array is even, return the average of the two middle elements
+    else:
+        mid1 = arr[n // 2 - 1]
+        mid2 = arr[n // 2]
+        return (mid1 + mid2) / 2
+
