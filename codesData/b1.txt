@@ -1,0 +1,10 @@
+def insertion_sort_while_loop(arr):
+    i = 1
+    while i < len(arr):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+        i += 1
