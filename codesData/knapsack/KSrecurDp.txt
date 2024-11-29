@@ -1,0 +1,22 @@
+def knapsack_recursive_dp(weights, values, capacity, n, memo):
+    if n == 0 or capacity == 0:
+        return 0
+    if (n, capacity) in memo:
+        return memo[(n, capacity)]
+    if weights[n-1] > capacity:
+        result = knapsack_recursive_dp(weights, values, capacity, n-1, memo)
+    else:
+        result = max(
+            values[n-1] + knapsack_recursive_dp(weights, values, capacity - weights[n-1], n-1, memo),
+            knapsack_recursive_dp(weights, values, capacity, n-1, memo)
+        )
+    memo[(n, capacity)] = result
+    return result
+
+# Example
+weights = [10, 20, 30]
+values = [60, 100, 120]
+capacity = 50
+n = len(weights)
+memo = {}
+print(f"Maximum value (Recursive DP): {knapsack_recursive_dp(weights, values, capacity, n, memo)}")
