@@ -1,4 +1,3 @@
-# https://github.com/sangHa0411/CloneDetection/blob/main/trainer.py
 import torch
 import torch.nn as nn
 from typing import Dict, Any, List, Optional, Union, Tuple
