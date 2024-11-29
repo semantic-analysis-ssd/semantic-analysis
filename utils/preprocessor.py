@@ -1,4 +1,3 @@
-# https://github.com/sangHa0411/CloneDetection/blob/main/utils/preprocessor.py
 import re
 
 
