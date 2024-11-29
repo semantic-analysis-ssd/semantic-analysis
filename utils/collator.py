@@ -1,4 +1,3 @@
-# https://github.com/sangHa0411/CloneDetection/blob/main/utils/collator.py
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Union
 from transformers.tokenization_utils_base import PreTrainedTokenizerBase
