@@ -1,4 +1,3 @@
-# https://github.com/sangHa0411/CloneDetection/blob/main/utils/encoder.py
 from transformers.tokenization_utils_base import BatchEncoding
 
 
